@@ -1,0 +1,17 @@
+{
+	"name"    : "x-crypto",
+	"version" : "0.0.0",
+	"license" : "MIT",
+	"dependencies":{
+		"x-common" : "latest"
+	},
+	"devDependencies":{
+		"vows"    : "latest",
+		"markdox" : "latest"
+	},
+	"main" : "index.js",
+	"scripts": {
+		"prepublish" : "markdox -o ./README.md ./index.js ./hash.js ./token.js",
+		"test"       : "vows ./test/*.test.js"
+	}
+}
