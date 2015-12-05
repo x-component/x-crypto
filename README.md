@@ -1,42 +1,35 @@
+# x-crypto
+
+[Build Status](https://travis-ci.org/x-component/x-crypto.png?v1.0.0)](https://travis-ci.org/x-component/x-crypto)
+
+- [./hash.js](#hashjs) 
+- [./index.js](#indexjs) 
+- [./token.js](#tokenjs) 
+
+# ./hash.js
 
 
-<!-- Start index.js -->
 
-<!-- End index.js -->
 
-<!-- Start hash.js -->
+# ./index.js
 
-Generates a sha1-hash
 
-values
 
-<!-- End hash.js -->
 
-<!-- Start token.js -->
+# ./token.js
 
-Generates and validates a sha1-hash
+  - [undefined.timestamp()](#undefinedtimestamp)
+  - [undefined.validate()](#undefinedvalidate)
+  - [undefined.url()](#undefinedurl)
 
-## timestamp()
+## undefined.timestamp()
 
-Generates a span alligned time span for the given period , 0 is now, period -1 the previous one back in time
+  Generates a span alligned time span for the given period , 0 is now, period -1 the previous one back in time
 
-optional
+## undefined.validate()
 
-optional
+  A token is valid if its equal to a token generated of the same or previous time span
 
-etc. ...
+## undefined.url()
 
-## validate()
-
-A token is valid if its equal to a token generated of the same or previous time span
-
-etc. ...
-
-## url()
-
-Defines how a token is added to or retrieved from an url
-
-url
-
-<!-- End token.js -->
-
+  Defines how a token is added to or retrieved from an url
